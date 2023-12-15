@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <!-- Font Style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@200;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/styles/header.css">
+    <link rel="stylesheet" href="/styles/project.css">
+    <!-- Boostrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!-- navbar-expand-sm hide button in larger devices -->
+        <nav class="navbar navbar-expand-sm bg-white fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="#">
+              <!-- <img src="" alt="Logo" class="profile-icon"> -->
+              Sheik Aahin</a>
+            <!-- button for toggle using bootstrap -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- navbarNav id for toggle to display and hide -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <!-- ms-auto marginstart makes content to marginend-->
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item d-flex flex-column flex-sm-row text-end py-5 py-sm-1">
+                  <a class="nav-link fw-bold " aria-current="page" href="/index.html">Home</a>
+                  <a class="nav-link fw-bold" href="/about.html">About</a>
+                  <a class="nav-link fw-bold" href="/project.html">Projects</a>
+                  <a class="nav-link fw-bold" href="/contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+    <div class="container-fluid project-container">
+        <div class="row ">
+            <div class="col-12 d-flex justify-content-center">
+                <div class="project-info-container d-flex justify-content-center align-items-center flex-column">
+                    <h3 class="project fw-bold text-uppercase">projects</h3>
+                    <div class="hamburger-stick"></div>
+                    <p class="project-title text-center">Here you will find some of the personal and clients
+                        projects that I created with each project containing its own case study</p>
+                </div>
+            </div>
+        </div>
+        <div class="row py-5">
+            <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                <img src="/images/macbookpro.svg" alt="project" class="project-img">
+            </div>
+            <div class="col-lg-6 d-flex justify-content-center  flex-column align-items-center align-items-lg-start">
+
+                <h3 class="fw-bold">Project Name</h3>
+                <p class="text-center text-lg-start project-description">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi a magnam ipsum neque minima?
+                    Minima autem facere maxime ad odit quisquam nostrum aperiam facilis ipsam?
+                </p>
+
+                <button class="text-uppercase case-study-btn fw-bold js-case-study-btn ">case study</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <script src="/scripts/project.js"></script>
+</body>
+
+
+</html>

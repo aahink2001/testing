@@ -1,0 +1,88 @@
+
+.bg-container{
+  background-image: url(/images/bg.svg);
+}
+.main-content-container{
+  height: 100vh;
+}
+.body-content-container{
+  max-width: 500px;
+}
+/* Below code for name ,description and project btn */
+.dev-name{
+  font-size: 2.5rem;
+  color: black;
+  padding: 0px 30px;
+  transition: color .15s;
+  word-spacing: 8px;
+}
+.dev-description{
+  font-size: 20px;
+  color: black;
+  padding: 0 15px;
+}
+.project-btn{
+  border: none;
+  color: white;
+  background-color: #7843e9;
+  text-transform: uppercase;
+  font-size: 22px;
+  padding: 10px 50px;
+  cursor: pointer;
+  border-radius: 5px;
+  letter-spacing: 3px;
+  margin-top: 20px;
+}
+/* Below code for sidebar */
+.sidebar-container{
+  left: -12px;
+  background-color: white;
+}
+.sidebar-container div{
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sidebar-container div img{
+  padding: 3px 3px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.sidebar-container div img:hover{
+  background-color: rgb(218, 217, 217);
+}
+
+/* Media Quries */
+
+@media (min-width:576px){
+  /* SM */
+  .body-content-container{
+    max-width: 500px;
+  }
+  .author-name{
+    font-size: 3.5rem;
+  }
+}
+@media (min-width:768px){
+ /* MD */
+  .body-content-container{
+    max-width: 660px;
+  }
+  .dev-description{
+    font-size: 22px;
+  }
+}
+@media (min-width:992px){
+  /* LG */
+  .body-content-container{
+    max-width: 860px;
+  }
+  .dev-name{
+    font-size: 4rem;
+  }
+  .dev-description{
+    font-size: 25px;
+  }
+}
