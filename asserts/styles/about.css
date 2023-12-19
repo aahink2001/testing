@@ -1,0 +1,121 @@
+.about-container {
+  padding-top: 100px;
+  background-color: #FAFAFA;
+}
+
+/* First Row */
+.first-row-content {
+  max-width: 700px !important;
+}
+
+.first-row-head {
+  font-size: 2.5rem;
+  letter-spacing: 6px;
+}
+
+.hamburger-stick {
+  height: 5px;
+  width: 30px;
+  background-color: #7843e9;
+  border-radius: 10px;
+}
+
+.first-row-description {
+  font-size: 20px;
+}
+
+/* Second Row */
+.second-row-content-1 {
+  max-width: 750px !important;
+  text-align: justify;
+}
+
+.second-row-content-1 p {
+  font-size: 18px;
+}
+
+.second-row-content-2 {
+  max-width: 750px !important;
+}
+
+.contact-btn {
+  color: white;
+  background-color: #7843e9;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 5px;
+  letter-spacing: 3px;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 300px;
+}
+
+/* My skills */
+.skills-btn {
+  border: none;
+  background-color: rgb(224, 224, 224);
+  color: rgb(85, 85, 85);
+  padding: 15px 18px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  margin-right: 12px;
+  transition: all .5s;
+}
+
+.skills-btn:hover {
+  background-color: #7843e9;
+  color: white;
+}
+
+/* Third Row */
+
+.third-row-head {
+  letter-spacing: 4px;
+}
+
+.vertical-stick {
+  height: 100%;
+  min-height: 130px;
+  max-height: 350px;
+  width: 3px;
+  background-color: #7843e9;
+  border-radius: 10px;
+}
+
+.education-container {
+  max-width: 350px !important;
+}
+
+.icon-bg {
+  background-color: #7843e9;
+}
+
+.icon-bg img {
+  height: 45px;
+}
+
+.grade-head {
+  font-size: 20px;
+}
+
+.grade-description {
+  font-size: 18px;
+}
+
+@media (max-width:576px) {
+  .icon-bg img {
+    height: 35px;
+  }
+
+  .grade-head {
+    font-size: 17px;
+  }
+
+  .grade-description {
+    font-size: 15px;
+  }
+}

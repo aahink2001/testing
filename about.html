@@ -6,16 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About</title>
-  <!-- Font Style -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@200;400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="/styles/header.css">
-  <link rel="stylesheet" href="/styles/about.css">
   <!-- Boostrap CDN -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/asserts/styles/header.css">
+  <link rel="stylesheet" href="/asserts/styles/about.css">
 </head>
 
 <body>
@@ -36,9 +31,9 @@
           <!-- ms-auto marginstart makes content to marginend-->
           <ul class="navbar-nav ms-auto">
             <li class="nav-item d-flex flex-column flex-sm-row text-end py-5 py-sm-1">
-              <a class="nav-link fw-bold " aria-current="page" href="/index.html">Home</a>
-              <a class="nav-link fw-bold" href="/about.html">About</a>
-              <a class="nav-link fw-bold" href="/project.html">Projects</a>
+              <a class="nav-link fw-bold" href="/index.html">Home</a>
+              <a class="nav-link fw-bold" aria-current="page" href="/about.html">About</a>
+              <a class="nav-link fw-bold" href="/challenges.html">CHallenges</a>
               <a class="nav-link fw-bold" href="/contact.html">Contact</a>
             </li>
           </ul>
@@ -48,33 +43,38 @@
   </header>
   <main>
     <div class="container-fluid about-container">
-      <div class="row ">
-        <div class="col-12 d-flex justify-content-center">
-          <div class="about-dev-container d-flex justify-content-center align-items-center flex-column">
-            <h3 class="about-dev fw-bold text-uppercase">About me</h3>
-            <div class="hamburger-stick"></div>
-            <p class="about-dev-description text-center">Here you will find more information about me, what I do, and my
-              current skills
-              mostly in terms of programming and technology</p>
-          </div>
+      <!-- First Row -->
+      <div class="row d-grid  justify-content-center ">
+
+        <!-- Below col for content in the center of row -->
+        <div class="col d-flex flex-column align-items-center px-3 px-sm-5 first-row-content">
+          <h3 class="fw-bold text-uppercase first-row-head">About</h3>
+          <div class="hamburger-stick"></div>
+          <p class="first-row-description text-center mt-4 ">Here you will find more information about me, what I do,
+            and my
+            current skills
+            mostly in terms of programming and technology</p>
         </div>
+        <!-- End col -->
       </div>
 
+      <!-- Second Row -->
       <div class="row py-5 ">
-        <div class="col-lg-6 ">
-          <div class="get-know-about-dev">
-            <h3 class="fw-bold">Get to know me!</h3>
-            <p>I'm a <b class="text-muted">Frontend Web Developer</b> building the Front-end of Websites and Web
-              Applications that leads to the
-              success of the overall product. Check out some of my work in the <b class="text-muted">Projects</b>
-              section.</p>
-            <p>I'm open to <b class="text-muted">Job opportunities</b> where I can contribute, learn and grow. If you
-              have a good opportunity that
-              matches my skills and experience then don't hesitate to <b class="text-muted">contact me</b>.</p>
-            <button class="text-uppercase contact-btn fw-bold js-contact-btn">contact</button>
-          </div>
+        <!-- First Column with 6col left side-->
+        <div class="col-lg-6 px-4 px-sm-5 second-row-content-1">
+          <h3 class="fw-bold">Get to know me!</h3>
+          <p>I'm a <b class="text-muted">Frontend Web Developer</b> building the Front-end of Websites and Web
+            Applications that leads to the
+            success of the overall product. Check out some of my work in the <b class="text-muted">Projects</b>
+            section.</p>
+          <p>I'm open to <b class="text-muted">Job opportunities</b> where I can contribute, learn and grow. If you
+            have a good opportunity that
+            matches my skills and experience then don't hesitate to <b class="text-muted">contact me</b>.</p>
+          <button class="text-uppercase contact-btn fw-bold js-contact-btn">contact</button>
         </div>
-        <div class="col-lg-6 py-5 py-lg-0">
+        <!-- First col end -->
+        <!-- Second Column with 6col right side-->
+        <div class="col-lg-6 mt-5 mt-lg-0 px-4 px-sm-5 second-row-content-2">
           <div class="skills-container">
             <h3 class="fw-bold mb-3">My Skills</h3>
             <button class="skills-btn">HTML</button>
@@ -87,15 +87,89 @@
             <button class="skills-btn">SASS</button>
             <button class="skills-btn">Java</button>
             <button class="skills-btn">SQL</button>
-
+            <button class="skills-btn">JDBC</button>
           </div>
         </div>
+        <!-- Second col end -->
       </div>
+
+      <!-- Third Row -->
+      <div class="row pb-5 d-grid justify-content-center">
+        <!-- Outside Container -->
+        <div class="col d-flex flex-column align-items-center px-5">
+          <h3 class="fw-bold text-uppercase third-row-head">Education</h3>
+          <div class="hamburger-stick"></div>
+          <!-- Inside Container Start -->
+          <div class="education-container">
+            <!-- College -->
+            <div class="row my-5">
+              <!-- First column 2col left side -->
+              <div class="col-2 d-flex flex-column align-items-center ">
+                <div class="icon-bg rounded-5">
+                  <img src="/asserts/images/graduation-cap-white.png" alt="" class="p-2">
+                </div>
+                <div class="vertical-stick"></div>
+              </div>
+              <!-- Second column 10col right side -->
+              <div class="col-10 mt-2">
+                <small class="bg-body-secondary rounded-5 px-3 fs-6 fw-bold ">2019-2023</small>
+                <h6 class="mt-3 fw-bold grade-head">BE(Computer Science and Engineering)</h6>
+                <small class="fw-medium grade-description">
+                  Dhanalakshmi Srinivasan
+                  Engineering College, Perambalur</small>
+                <h6 class="fw-bold">8.1 CGPA</h6>
+              </div>
+            </div>
+
+            <!-- 12th -->
+            <div class="row my-5">
+              <!-- First column 2col left side -->
+              <div class="col-2 d-flex flex-column align-items-center ">
+                <div class="icon-bg rounded-5">
+                  <img src="/asserts/images/graduation-cap-white.png" alt="" class="p-2">
+                </div>
+                <div class="vertical-stick"></div>
+              </div>
+              <!-- Second column 10col right side -->
+              <div class="col-10 mt-2">
+                <small class="bg-body-secondary rounded-5 px-3 fs-6 fw-bold ">2018-2019</small>
+                <h6 class="mt-3 fw-bold grade-head">12th Grade</h6>
+                <small class="fw-medium grade-description">
+                  Model School A.Kumaramangalam, Kallakurichi</small>
+                <h6 class="fw-bold">61.5 &#37;</h6>
+              </div>
+            </div>
+
+            <!-- 10th -->
+            <div class="row my-5">
+              <!-- First column 2col left side -->
+              <div class="col-2 d-flex flex-column align-items-center ">
+                <div class="icon-bg rounded-5">
+                  <img src="/asserts/images/graduation-cap-white.png" alt="" class="p-2">
+                </div>
+                <div class="vertical-stick"></div>
+              </div>
+              <!-- Second column 10col right side -->
+              <div class="col-10 mt-2">
+                <small class="bg-body-secondary rounded-5 px-3 fs-6 fw-bold ">2016-2017</small>
+                <h6 class="mt-3 fw-bold grade-head">10th Grade</h6>
+                <small class="fw-medium grade-description">
+                  Model School A.Kumaramangalam, Kallakurichi</small>
+                <h6 class="fw-bold">72.6 &#37;</h6>
+              </div>
+            </div>
+
+          </div>
+          <!-- Inside Container End -->
+        </div>
+        <!-- Outside Container End -->
+      </div>
+
     </div>
   </main>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
-  <script src="/scripts/about.js"></script>
+  <script src="/asserts/scripts/about.js"></script>
 </body>
 
 </html>

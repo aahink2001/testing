@@ -1,0 +1,122 @@
+.contact-container {
+    padding-top: 100px;
+    background-image: url('/asserts/images/bg.svg');
+    color: rgb(33, 37, 41);
+}
+
+/* First Row */
+.first-row-content {
+    /* This code Avoids col-md-7 col-lg-5 col-xl-4 col-xxl-5 */
+    max-width: 500px !important;
+}
+
+.hamburger-stick {
+    height: 5px;
+    width: 30px;
+    background-color: #7843e9;
+    border-radius: 10px;
+}
+
+.first-row-head {
+    font-size: 2.5rem;
+    letter-spacing: 6px;
+}
+
+.first-row-description {
+    font-size: 20px;
+}
+
+/* Second Row */
+.second-row-content {
+      max-width: 550px !important;
+}
+
+label {
+    font-size: 18px;
+}
+
+.css-input {
+    font-size: 17px;
+    padding: 10px 15px;
+    outline: none;
+    background-color: #ececec;
+    border-radius: 10px;
+    border: 3px solid #7843e9;
+}
+
+#message {
+    resize: none;
+    height: 200px !important;
+}
+
+.error-txt {
+    color: rgb(251, 47, 47);
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 15px;
+    font-style: italic;
+    transition: .5s;
+    display: none;
+}
+
+.form-control .error .css-input {
+    border: 3px solid rgb(251, 47, 47);
+}
+
+.form-control .error .error-txt {
+    display: block;
+}
+
+.submit-btn {
+    color: white;
+    background-color: #7843e9;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    letter-spacing: 3px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 300px;
+}
+/* Footer */
+.footer{
+    
+    background-color: #000000;
+    color: #ffffff;
+}
+.footer-col{
+    width: 100%;
+    max-width: 500px !important; 
+}
+.footer-left{
+text-align: justify;
+}
+.footer-right div{
+    padding: 10px;
+    display: inline-block;
+    background-color: #000000;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    margin-right: 5px;
+}
+.footer-right img{
+    width: 100%;
+   cursor: pointer;
+}
+.sticky-line{
+    width: 95%;
+    height: 1px;
+    background-color: #7843e9;
+    margin: 20px 0px;
+}
+@media (max-width:576px){
+    .footer-right div{
+        height: 50px;
+        width: 50px;
+    }
+    
+}

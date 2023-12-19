@@ -1,0 +1,51 @@
+.project-container {
+  padding-top: 100px;
+  background-color: #FAFAFA;
+}
+
+
+/* First Row */
+.first-row-content {
+  /* This code Avoids col-md-7 col-lg-5 col-xl-4 col-xxl-5 */
+  max-width: 650px !important;
+}
+.hamburger-stick {
+  height: 5px;
+  width: 30px;
+  background-color: #7843e9;
+  border-radius: 10px;
+}
+.first-row-head {
+  font-size: 2.5rem;
+  letter-spacing: 6px;
+}
+
+.first-row-description {
+  font-size: 20px;
+}
+
+/* Second Row */
+.second-row-content{
+  padding: 0;
+}
+.challege-head {
+  font-size: 20px;
+}
+
+.challenge-description {
+  font-size: 19px;
+}
+
+.view-btn {
+  color: white;
+  background-color: #7843e9;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 5px;
+  letter-spacing: 3px;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 300px;
+}

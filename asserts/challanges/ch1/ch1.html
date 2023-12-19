@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge#1</title>
+    <!-- Boostrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/asserts/styles/header.css">
+    <style>
+        .challenge-container {
+            padding-top: 100px;
+            background-color: #FAFAFA;
+        }
+
+        .hamburger-stick {
+            height: 5px;
+            width: 30px;
+            background-color: #7843e9;
+            border-radius: 10px;
+        }
+
+        p {
+            font-size: 18px;
+            text-align: justify;
+        }
+
+        .challenge-link-btn,
+        .challenge-view-btn,
+        .go-back-btn {
+            color: white;
+            background-color: #7843e9;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 5px;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+        }
+
+        .go-back-btn {
+            color: #7843e9;
+            padding: 8px 20px;
+            border: 2px solid #7843e9;
+            background-color: #FFFFFF;
+        }
+
+        .skills-btn {
+            border: none;
+            background-color: rgb(224, 224, 224);
+            color: rgb(85, 85, 85);
+            padding: 15px 18px;
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            margin-right: 12px;
+            transition: all .5s;
+        }
+
+        .skills-btn:hover {
+            background-color: #7843e9;
+            color: white;
+        }
+
+        /* Footer */
+        .footer {
+
+            background-color: hsl(0, 0%, 0%);
+            color: #ffffff;
+            font-size: 16px;
+        }
+
+        .footer-col {
+            width: 100%;
+            max-width: 500px !important;
+        }
+
+        .footer-left {
+            text-align: justify;
+        }
+
+        .footer-right div {
+            padding: 10px;
+            display: inline-block;
+            background-color: #000000;
+            border: 1px solid #ffffff;
+            border-radius: 50%;
+            height: 60px;
+            width: 60px;
+            margin-right: 5px;
+        }
+
+        .footer-right img {
+            width: 100%;
+            cursor: pointer;
+        }
+
+        .sticky-line {
+            width: 95%;
+            height: 1px;
+            background-color: #7843e9;
+            margin: 20px 0px;
+        }
+
+        @media (max-width:576px) {
+            .skills-btn {
+                padding: 10px 12px;
+                font-size: 15px;
+            }
+
+            .footer {
+                font-size: 14px;
+            }
+
+            .footer-right div {
+                height: 50px;
+                width: 50px;
+            }
+
+            .copyright-content {
+                font-size: 14px;
+            }
+
+        }
+        .first-row-content{
+            max-width: 650px !important;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <!-- navbar-expand-sm hide button in larger devices -->
+        <nav class="navbar navbar-expand-sm bg-white fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold" href="#">
+                    <!-- <img src="" alt="Logo" class="profile-icon"> -->
+                    Sheik Aahin</a>
+                <!-- button for toggle using bootstrap -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- navbarNav id for toggle to display and hide -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <!-- ms-auto marginstart makes content to marginend-->
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item d-flex flex-column flex-sm-row text-end py-5 py-sm-1">
+                            <a class="nav-link fw-bold" href="/index.html">Home</a>
+                            <a class="nav-link fw-bold" href="/about.html">About</a>
+                            <a class="nav-link fw-bold" href="/challenges.html">Challenges</a>
+                            <a class="nav-link fw-bold" href="/contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container-fluid d-flex flex-column align-items-center challenge-container pb-5">
+        <!-- First Row -->
+        <div class="row">
+            <!-- Below col for content in the center of row -->
+            <div class="col-12 d-flex flex-column align-items-center px-3 px-sm-5 first-row-content">
+                <h3 class="fw-bold text-uppercase first-row-head">challenge #1</h3>
+                <div class="hamburger-stick"></div>
+                <p class="first-row-description text-center mt-4 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, consequatur!</p>
+                <button class="text-uppercase mt-3 challenge-link-btn fw-bold ">Challenge Link</button>
+            </div>
+        </div>
+       
+        <!-- Second Row -->
+        <div class="row">
+            <div class="col second-row-content">
+                <div><img src="/asserts/images/macbookpro.svg" alt="img" width="100%"></div>
+                <div class="p-3 p-sm-5">
+                    <h5 class="fw-bold">Challenge Overview</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat eveniet harum, similique
+                        officiis autem quidem quod nihil possimus tenetur perspiciatis eos amet ea expedita sapiente
+                        sunt nulla, blanditiis accusantium ducimus nostrum! Impedit sed quas asperiores voluptatibus,
+                        sequi esse! Enim nisi maxime fugit labore sint possimus in unde quibusdam. Nihil eveniet sunt
+                        fuga cum amet dolore suscipit tempore ipsum ratione. Aut!</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur obcaecati corrupti commodi
+                        odio provident non blanditiis id dolores, officiis labore praesentium, quam, omnis sint atque
+                        hic delectus sed modi maiores?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quisquam tempore dolorem adipisci.
+                        Aliquam voluptatum autem sint recusandae distinctio aperiam impedit, asperiores error obcaecati
+                        odit modi totam sunt ipsum dignissimos inventore eveniet quia tenetur minus officiis animi iste
+                        aspernatur? Soluta dignissimos quia est illum, provident praesentium fugit dolor nobis beatae
+                        ea, doloribus a reprehenderit iusto earum. Provident numquam nostrum debitis earum incidunt
+                        perferendis facere in delectus, fuga magni aliquid assumenda dolor error possimus, inventore
+                        eos. Modi aperiam inventore veniam vitae.</p>
+                    <h5 class="fw-bold">Tools Used</h5>
+                    <button class="skills-btn">HTML</button>
+                    <button class="skills-btn">CSS</button>
+                    <button class="skills-btn">JavaScript</button>
+                    <button class="skills-btn">Bootstrap</button>
+                    <button class="skills-btn">Git</button>
+                    <button class="skills-btn">Github</button>
+                    <button class="skills-btn">Responsive Web Design</button>
+                    <h5 class="fw-bold mt-3 ">See Live</h5>
+                    <button class="text-uppercase challenge-view-btn fw-bold me-4 ">view challenge</button>
+                    <button class="text-uppercase go-back-btn fw-bold btns">go back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Container -->
+    <div class="container-fluid footer py-3 ">
+        <div class="row ">
+            <div class="col"></div>
+            <!-- First Col -->
+            <div class="col-sm-6 footer-col">
+                <div class="footer-left">
+                    <h3 class="fw-bolder text-uppercase">sheik aahin</h3>
+                    <p class="mt-2 ">
+                        A Frontend focused Web Developer building the Frontend of Websites and Web
+                        Applications that leads to the success of the overall product.
+                    </p>
+                </div>
+                <div class="footer-right">
+                    <h3 class="fw-bold text-uppercase ">social</h3>
+                    <div>
+                        <a href="http://github.com/aahin-github" target="_blank">
+                            <img src="/asserts/images/github-bg-black.png" alt="github-icon">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="http://linkedin.com/in/aahin-k" target="_blank">
+                            <img src="/asserts/images/linkedin-bg-black.png" alt="github-icon">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="/index.html" target="_blank">
+                            <img src="/asserts/images/instagram-bg-black.png" alt="github-icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col"></div>
+
+            <!-- Second Col -->
+            <div class="col-12 text-center mt-2 copyright-content">
+                <div class="d-flex justify-content-center ">
+                    <div class="sticky-line"></div>
+                </div>
+                &#169; Copyright 2023.Made by <a href="/index.html" target="_blank" style="text-decoration: none;">Sheik
+                    Aahin</a>
+
+            </div>
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <script>
+        const gobackbtn = document.querySelector('.go-back-btn');
+        gobackbtn.addEventListener('click', () => {
+            window.history.back();
+        });
+        const viewbtn = document.querySelector('.challenge-view-btn');
+        viewbtn.addEventListener('click', () => {
+
+        });
+    </script>
+</body>
+
+</html>

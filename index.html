@@ -5,16 +5,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Portfolio</title>
-  <!-- Font Style -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@200;400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="/styles/home.css">
-  <link rel="stylesheet" href="/styles/header.css">
   <!-- Boostrap CDN -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+
+  <link rel="stylesheet" href="/asserts/styles/header.css">
+  <link rel="stylesheet" href="/asserts/styles/home.css">
+
 </head>
 
 <body>
@@ -37,7 +34,7 @@
             <li class="nav-item d-flex flex-column flex-sm-row text-end py-5 py-sm-1">
               <a class="nav-link fw-bold " aria-current="page" href="/index.html">Home</a>
               <a class="nav-link fw-bold" href="/about.html">About</a>
-              <a class="nav-link fw-bold" href="/project.html">Projects</a>
+              <a class="nav-link fw-bold" href="/challenges.html">Challenges</a>
               <a class="nav-link fw-bold" href="/contact.html">Contact</a>
             </li>
           </ul>
@@ -46,18 +43,21 @@
     </nav>
   </header>
   <main>
-    <div class="container-fluid bg-container">
-      <div class="main-content-container  d-flex justify-content-center align-items-center position-relative">
-        <div class="body-content-container text-center">
-          <h3 class="dev-name text-uppercase fw-bold ">Hey, i'm sheik aahin</h3>
-          <p class="dev-description ">A Frontend focused Web Developer building the Frontend of Websites and Web
-            Applications that leads to the success of the overall product.</p>
-          <button class="project-btn fw-bold js-project-btn">Projects</button>
+    <div class="container-fluid home-container">
+      <!-- First Row -->
+      <div class="row h-100 d-grid justify-content-center ">
+        <!-- Below col for content in the center of row -->
+        <div
+          class="col d-flex flex-column align-items-center justify-content-center px-3 px-sm-5 first-row-content">
+          <h3 class="fw-bolder text-uppercase first-row-head text-center">Hey, i'm sheik aahin</h3>
+          <div class="hamburger-stick"></div>
+          <p class="first-row-description text-center mt-4 ">
+            A Frontend focused Web Developer building the Frontend of Websites and Web
+            Applications that leads to the success of the overall product.
+          </p>
+          <button class="challenge-btn fw-bold js-challenge-btn text-uppercase ">challenges</button>
         </div>
-        <div class="sidebar-container position-absolute d-none d-lg-block">
-          <div><img src="/images/github.svg" alt="" height="60" class="js-github-icon"></div>
-          <div><img src="/images/linkedin.svg" alt="" height="60" class="js-linkedin-icon"></div>
-        </div>
+        <!-- End col -->
       </div>
     </div>
   </main>
@@ -69,7 +69,7 @@
   -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
-  <script src="/scripts/home.js"></script>
+  <script src="/asserts/scripts/home.js"></script>
 </body>
 
 </html>
