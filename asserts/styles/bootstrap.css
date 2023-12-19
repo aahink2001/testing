@@ -1,0 +1,64 @@
+/* 
+<576 xs
+576px SM
+768px MD
+992px LG
+1200px XL
+1400px XXL
+
+*/
+
+.btn-rel{
+  position: relative;
+  font-size: 30px;
+  font-weight: bolder;
+  color: orange;
+}
+.btn-abs::before{
+  content: 'XS' ;
+  position: absolute ;
+  top:0px;
+  left: 190px;
+  z-index: 99999999;
+}
+@media (min-width:576px){
+  .btn-abs::before{
+    content: 'SM';
+  }
+}
+@media (min-width:768px){
+  .btn-abs::before{
+    content: 'MD';
+  }
+}
+@media (min-width:992px){
+  .btn-abs::before{
+    content: 'LG';
+  }
+}
+@media (min-width:1200px){
+  .btn-abs::before{
+    content: 'XL';
+  }
+}
+@media (min-width:1400px){
+  .btn-abs::before{
+    content: 'XXL';
+  }
+}
+
+/* @media (min-width:576px){
+  SM 
+}
+@media (min-width:768px){
+  MD
+}
+@media (min-width:992px){
+  LG
+}
+@media (min-width:1200px){
+  XL
+}
+@media (min-width:1400px){
+  XXL
+} */
